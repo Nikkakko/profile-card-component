@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+.img {
+  width: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Dark-cyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 375px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.src-victor {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.name {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.city {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.age {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* FOOTER */
+.card-footer {
+  border-top: 0.2px solid;
+  border-color: rgba(150, 150, 150, 0.3);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.stats {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.p-footer {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  margin-top: 5px;
+}
